@@ -11,16 +11,18 @@ var wordBlanksEl = document.querySelector('.word-blanks')
 var winsEl = document.querySelector('.win')
 var lossesEl = document.querySelector('.lose')
 
-console.log(startButton, resetButton, timerEl, wordBlanksEl, winsEl, lossesEl);
 
   // list of words
-  // userGuesses = [] list of letters guessed by user
-  // answer = "function"
+  var words = ["jellyfish", "pancakes", "callback", "Bacon", "Porcupine"]
+  var userGuesses = []
+
+  var answer 
 
   function startRound() {
     // start timer
     // pick a random word
     // set word-blanks to have _'s
+    console.log("start");
   }
 
   function onKeydown(event) {
@@ -46,5 +48,6 @@ console.log(startButton, resetButton, timerEl, wordBlanksEl, winsEl, lossesEl);
 
   // Event Listeners
     // start - startRound()
+    startButton.addEventListener('click', startRound)
     // reset
     // keydown - onKeydown
